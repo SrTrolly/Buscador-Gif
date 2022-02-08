@@ -1,4 +1,14 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis accusamus
-consectetur tempora voluptates, laboriosam illo aliquam delectus ipsa nostrum
-voluptatum maiores reiciendis assumenda! Ad eveniet soluta dolore vel similique
-voluptatum?
+<div class="row">
+  <div *ngFor="let gif of resultados" class="col-md-4 col-sm-6">
+    <div class="card">
+      <img
+        [src]="gif.images.downsized_medium.url"
+        alt="gif.tittle"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <p class="card-text">{{ gif.title }}</p>
+      </div>
+    </div>
+  </div>
+</div>
